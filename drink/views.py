@@ -1,10 +1,14 @@
+#from django
 from django.http import JsonResponse
-from .models import Drink
-from .serializers import DrinkSerializer
+
+#from rest_framework
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
+#from Project
+from .models import Drink
+from .serializers import DrinkSerializer
 from drink import serializers
 
 @api_view(['GET', 'POST'])
