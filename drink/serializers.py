@@ -1,4 +1,7 @@
+#from rest_framework
 from rest_framework import serializers
+
+#from the project
 from .models import Drink
 
 
